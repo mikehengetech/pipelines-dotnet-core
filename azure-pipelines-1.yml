@@ -2,6 +2,13 @@
 # Build and test ASP.NET Core projects targeting .NET Core.
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+resources:
+ repositories:
+   - repository: rep2
+     type: git
+     name: Mikle/rep2
+     trigger:
+     - master
 
 trigger:
 - master
