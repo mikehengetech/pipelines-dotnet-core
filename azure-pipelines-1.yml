@@ -8,8 +8,10 @@ resources:
      type: git
      name: Mikle/rep2
      ref: main
-     trigger:
-     - master
+   - repository: MyGitHubRepo # The name used to reference this repository in the checkout step
+     type: github
+     endpoint: mikehengetech
+     name: mikehengetech/pipelines-dotnet-core
 
 trigger:
 - master
