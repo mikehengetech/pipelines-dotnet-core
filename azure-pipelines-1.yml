@@ -22,7 +22,6 @@ variables:
 
 steps:
 - checkout: self
-- checkout: rep2
 
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
