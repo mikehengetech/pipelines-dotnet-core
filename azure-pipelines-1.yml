@@ -24,6 +24,7 @@ variables:
 
 steps:
 - checkout: self
+- checkout: MyGitHubRepo
 
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
